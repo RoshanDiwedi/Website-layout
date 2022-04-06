@@ -1,0 +1,227 @@
+
+@import url('https://fonts.googleapis.com/css2?family=Lora:wght@500;700&family=Playball&family=Poppins&display=swap');
+
+/* font-family: 'Lora', serif;
+font-family: 'Playball', cursive;
+font-family: 'Poppins', sans-serif; */
+
+/* Root attribute */
+:root{
+    --color-primary: #153f6f;
+    --color-light: #ffffff;
+    --color-bg-light: #f7f7f7;
+    --color-bg-col-light: #e9f1f9;
+    --color-dark: #303030;
+}
+
+/* global CSS section */
+
+*,::before,::after{
+    box-sizing: border-box;
+    padding: 0;
+    margin: 0;
+    text-decoration: none;
+    list-style-type: none;
+}
+
+body{
+    box-sizing: border-box;
+    padding: 0;
+    margin: 0;
+    text-decoration: none;
+    list-style-type: none;
+}
+
+h1{
+    font-size: 48px;
+    font-family: 'Playball', cursive;
+    text-transform: capitalize;
+    line-height: 1.8;
+}
+
+h2{
+    color: var(--color-primary);
+    font-size: 32px;
+    font-family: 'Lora', serif;
+    text-transform: capitalize;
+}
+
+h3{
+    font-family: 'Playball', cursive;
+    font-size: 36px;
+    text-transform: capitalize;
+}
+
+h4{
+    font-family: 'Playball', cursive;
+    font-size: 30px;
+    text-transform: capitalize;
+}
+
+p{
+    font-size: 16px;
+    font-family: 'Poppins', sans-serif;
+}
+
+.btn{
+    font-family: 'Poppins', sans-serif; 
+    padding: 15px;
+    text-transform: uppercase;
+    color: var(--color-light);
+    background-color: var(--color-primary);
+    width:150px;
+    margin-top: 35px;
+    text-align: center;
+}
+
+.container{
+    max-width: 980px;
+    width: 100%;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin: 0 auto;
+}
+
+.full-container{
+    width: 100%;
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    margin: 0 auto;
+    flex-basis: 50%;
+}
+
+.bg-row{
+    background-color: var(--color-bg-light);
+}
+
+.main-container{
+    padding: 100px 0;
+}
+
+
+/* Header Section */
+.header-padding{
+    padding: 10px 0;
+}
+
+.logo img{
+    width: 18%;
+}
+
+.nav a{
+    color: var(--color-dark);
+    font-family: 'Lora', serif;
+    font-size: 18px;
+    font-weight: bold;
+    text-transform: uppercase;
+    margin-left: 10px;
+    padding: 8px;
+    box-sizing: border-box;
+}
+
+.nav a:focus{
+    border: 2px solid var(--color-dark);
+}
+
+
+/* Banner Section */
+.banner-bg-img{
+    background-image: url(banner.jpg);
+    width: 100%;
+    height: 80vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.banner-bg-img::before{
+    background-color: rgba(0, 0, 0, 0.6);
+    content: '';
+    height: 80vh;
+    width: 100%;
+    position: absolute;
+    z-index: 1;
+}
+
+.banner-bg-img::after{
+    background-color: rgba(0, 0, 0, 0.4);
+    content: '';
+    height: 80vh;
+    width: 100%;
+    position: absolute;
+    z-index: 1;
+}
+
+.banner-text{
+    align-items: center;
+    color: var(--color-light);
+    text-align: center;
+    z-index: 3;
+}
+
+div.banner-bg-img>:last-child{
+    font-size: 50px;
+    font-family: 'Playball', cursive;
+}
+
+
+/* Gallery Section */
+.gallery-box{
+    text-align: center;
+    padding: 0 15px;
+}
+
+.gallery-box img{
+    width: 100%;
+}
+
+.gallery-txt-box{
+    padding-top: 15px;
+}
+
+.gallery-txt{
+    color: var(--color-dark);
+    font-family: 'Lora', serif;
+    font-size: 25px;
+    font-weight: bold;
+}
+
+
+
+/* Catering Section */
+.catering-bg-color{
+    background-color: var(--color-bg-col-light);
+}
+
+.catering-img{
+    flex-basis: 100%;
+}
+
+.catering-img img{
+    width: 100%;
+}
+
+.catering-txt-box{
+    flex-basis: 100%;
+    padding: 20px 50px;
+}
+
+.catering-txt-box h4{
+    margin-top: 15px;
+    margin-bottom: 25px;
+}
+
+.catering-nemo-text{
+
+}
+
+/* Media Query Section*/
+@media screen and (max-width:767px){
+
+    .nav a{    
+        font-size: 14px;
+    }
+
+}
