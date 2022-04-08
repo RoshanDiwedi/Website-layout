@@ -58,9 +58,21 @@ h4{
     text-transform: capitalize;
 }
 
+h5{
+    font-family: 'Playball', cursive;
+    font-size: 18px;
+    text-transform: capitalize;
+    line-height: 2;
+}
+
+
 p{
     font-size: 16px;
     font-family: 'Poppins', sans-serif;
+}
+
+.txt-center{
+    text-align: center;
 }
 
 .btn{
@@ -87,7 +99,7 @@ p{
     width: 100%;
     display: flex;
     justify-content: space-around;
-    align-items: center;
+    align-items: stretch;
     margin: 0 auto;
     flex-basis: 50%;
 }
@@ -100,6 +112,10 @@ p{
     padding: 100px 0;
 }
 
+.container-stretch {
+    align-items: stretch;
+    padding-top: 0;
+}
 
 /* Header Section */
 .header-padding{
@@ -108,6 +124,14 @@ p{
 
 .logo img{
     width: 18%;
+}
+
+.fa-fa-icon{
+    display: none;
+}
+
+nav .nav-box{
+    display: none;
 }
 
 .nav a{
@@ -201,11 +225,17 @@ div.banner-bg-img>:last-child{
 
 .catering-img img{
     width: 100%;
+    height: 100%;
+    object-fit: cover;
+    object-position: center;
 }
 
 .catering-txt-box{
     flex-basis: 100%;
     padding: 20px 50px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
 }
 
 .catering-txt-box h4{
@@ -213,15 +243,378 @@ div.banner-bg-img>:last-child{
     margin-bottom: 25px;
 }
 
-.catering-nemo-text{
 
+/* Pricing Section */
+.price{
+    margin: 0 auto;
 }
+.price-btn{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    background-color: var(--color-bg-col-light);
+    border-radius: 50px;
+    margin-top: 40px;
+    margin-bottom: 60px;
+    border: 1px solid var(--color-primary);
+}
+
+.btn-rounded {
+    display: inline-block;
+    padding: 8px 0;
+    text-align: center;
+    background-color: var(--color-primary);
+    color: var(--color-light);
+    font-family: 'Playball', cursive;
+    font-size: 20px;
+    border-radius: 50px;
+    width: 50%;
+}
+
+.price-btn span{
+    display: inline-block;
+    text-align: center;
+    color: var(--color-dark);
+    font-family: 'Playball', cursive;
+    font-size: 20px;
+    border-radius: 50px;
+    width: 50%;
+}
+
+/* price section columns part */
+.price-main-container{
+    align-items: stretch;
+}
+.price-col{
+    background-color: var(--color-bg-col-light);
+    padding: 25px;
+    max-width: 980px;
+    width: 32%;
+}
+
+.price-txt-flex{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.divider{
+    background-color: rgb(226, 226, 226);
+    width: 70%;
+    margin: 10px auto;
+}
+
+.price-last-txt{
+    font-family: 'Playball', cursive;
+    font-size: 12px;
+    margin-bottom: 10px;
+    display: block;
+}
+
+.price-txt-box{
+    padding-right: 20px;
+}
+
+
+
+/* Video Section */
+.video{
+    width: 50%;
+}
+
+.iframe{
+    width: 100%;
+    height: 375px;
+}
+
+.video-txt-col{
+    background-color: var(--color-bg-col-light);
+    padding: 35px;
+    margin-left: 15px;
+    width: 50%;
+    display: flex;
+    align-items: center;
+}
+
+.video-txt-col img{
+    width: 15%;
+}
+
+.video-txt-box{
+    text-align: center;
+}
+
+.video-txt-box p{
+    line-height: 2;
+}
+
+.video-txt-box span{
+    color: var(--color-primary);
+    font-size: 22px;
+    font-family: 'Playball', cursive;
+}
+
+
+/* Cta section */
+#cta{
+    background-color: var(--color-bg-col-light);
+}
+
+.cta-img{
+    width: 60%;
+    margin-top: -40px;
+}
+
+.cta-img img{
+    width: 100%;
+    align-items: flex-end;
+    display: flex;
+}
+
+.cta-para{
+    color: var(--color-primary);
+    font-family: 'Playball', cursive;
+    font-size: 30px;
+}
+
+.cta-txt h2{
+    line-height: 1.8;
+}
+
+.cta-txt h4{
+    color: var(--color-primary);
+    margin-bottom: 25px;
+}
+
+/* Newsletter Section */
+.news-txt{
+    text-align: center;
+}
+
+.news-txt p{
+    margin-top: 20px;
+    margin-bottom: 35px;
+}
+
+.email-label{
+    width: 70%;
+}
+
+.news-email{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.news-email-feild{
+    box-sizing: border-box;
+    font-size: 16px;
+    font-family: 'Poppins', sans-serif;
+    padding: 7px 11px;
+    width: 100%;
+    border-radius: 0;
+    border: 1px solid rgb(204, 204, 204);
+}
+
+.submit-btn{
+    font-size: 18px;
+    text-transform: uppercase;
+    padding: 10px;
+    border: none;
+    background: var(--color-primary);
+    color: var(--color-light);
+}
+
+
+/* footer section */
+#footer{
+    background-color: var(--color-bg-col-light);
+}
+
+.footer-col{
+    font-family: 'Poppins', sans-serif;
+    font-size: 14px;
+    line-height: 1.8;
+    text-align: center;
+}
+
+.footer-col h2{
+    margin-bottom: 20px;
+}
+
+.copyright{
+    background-color: var(--color-primary);
+    color: #ffffff;
+    padding: 15px 40px;
+    text-align: center;
+}
+
+
 
 /* Media Query Section*/
 @media screen and (max-width:767px){
+    h1{
+        font-size: 35px;
+    }
 
-    .nav a{    
+    h2 {
+        font-size: 28px;
+    }
+
+    h3{
+        font-size: 25px;
+    }
+
+    h4 {
+        font-size: 22px;
+    }
+
+    div.banner-bg-img>:last-child{
+        font-size: 35px;
+    }
+
+    .main-container {
+        padding: 40px 0px;
+    }
+
+    .container {
+        flex-direction: column;
+    }
+
+    .full-container {
+        flex-direction: column;
+    }
+
+    .gallery-box {
+        padding: 20px 15px;
+    }
+
+    .catering-txt-box {
+        padding: 35px 20px;
+    }
+
+    .price-main-container {
+        padding: 0 20px;
+    }
+
+    .price-col {
+        width: 100%;
+    }
+
+    .mobile-margin{
+        margin: 25px 0;
+    }
+
+    .video {
+        width: 100%;
+    }
+
+    .container-stretch{
+        padding-top: 0;
+        padding-right: 20px;
+        padding-left: 20px;
+    }
+
+    .video-txt-col {
+        width: 100%;
+    }
+
+    .video-txt-col {
+        margin-left: 0px;
+    }
+    
+    .cta-txt{
+        padding: 35px 20px;
+    }
+
+    .cta-img {
+        display: none;
+    }
+
+    .cta-txt h2 {
+        line-height: 1.5;
+    }
+
+    .cta-txt h4 {
+        margin-bottom: 25px;
+        margin-top: 15px;
+    }
+
+    .news-main-box{
+        padding: 0 20px;
+    }
+
+    .footer-col h2 {
+        margin-top: 25px;
+        margin-bottom: 5px;
+    }
+
+    /* mobile navigation */
+    .nav-box{
+        width:  45%;
+        background-color: var(--color-primary);
+        padding: 20px 10px;
+        position: absolute;
+        right: 0;
+        top: 0;
+        z-index: 10;
+    }
+    
+    .nav a {
+        display: block;
+        width: 100%;
+        color: var(--color-light);
         font-size: 14px;
+        padding: 8px 15px;
+        box-sizing: border-box;
+    }
+
+    .fa-fa-icon{
+        display: block;
+    }
+
+    #check{
+        display: none;
+    }
+
+    .fa-xmark{
+        display: none;
+    }
+
+    .fa-solid{
+        font-size: 25px;
+        z-index: 15;
+        position: absolute;
+        right: 6%;
+        top: 9%;
+    }
+
+    input:checked ~ nav>.nav-box{
+        display: block;
+    }
+
+    input:checked ~ label>.fa-bars{
+        display: block;
+        color: var(--color-dark);
+    }
+
+    input:checked ~ label>.fa-xmark{
+        display: block;
+        color: var(--color-light);
     }
 
 }
+
+
+/* input:checked ~ nav>.nav{
+    display: block;
+  }
+
+  input:checked ~ label>.fa-xmark{
+    display: block;
+    color: var(--color-light);
+  }
+
+  input:checked ~ label>.fa-bars{
+    display: none;
+  }   */
