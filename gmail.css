@@ -19,6 +19,7 @@
     padding: 0;
     list-style-type: none;
     text-decoration: none;
+    box-sizing: border-box;
 }
 
 body{
@@ -26,6 +27,7 @@ body{
     padding: 0;
     list-style-type: none;
     text-decoration: none;
+    box-sizing: border-box;
 }
 
 h1{
@@ -46,6 +48,22 @@ h4{
 
 p{
     font-family: 'Roboto', sans-serif;
+}
+
+ul li a{
+    font-family: 'Roboto', sans-serif;
+    color: var(--color-dark);
+    font-weight: bold;
+    line-height: 2.4;
+    font-size: 14px;
+}
+
+nav a{
+    font-family: 'Roboto', sans-serif;
+}
+
+.row{
+    padding: 15px 25px;
 }
 
 .containr{
@@ -78,7 +96,7 @@ p{
 /* Header Section */
 .nav-container{
     background-color: var(--color-dark);
-    padding: 15px 25px;
+    padding: 10px 25px;
 }
 
 .nav-container a{
@@ -93,35 +111,136 @@ p{
     color: var(--color-light);
 }
 
+.right-col a{
+    font-family: 'Roboto', sans-serif;
+}
+
 .btn-header{
     margin: 0 15px !important;
 }
 
-.search-bar{
-    border-radius: 3px;
-    font-family: 'Roboto', sans-serif;
-    padding: 10px;
+#status{
+    height: 39px;
+    border-radius: 50px;
+    font-size: 16px;
+    text-align: center;
+}
+
+.right-col img{
+    margin: 0 15px;
+}
+
+.fa-gear{
+    font-size: 30px;
 }
 
 /* Logo Section */
 
 .logo{
-    width: 20%;
+    max-width: 250px;
+    width: 100%;
 }
 
-.logo img{
-    width: 100%;
+.logo img {
+    width: 40%;
 }
 
 .logo-row{
     background-color: var(--color-light-grey);
-    padding: 15px 30px;
 }
 
-.search-bar{
+.logo-search{
+    width: 100%;
+    display: flex;
+}
+
+.search-bar {
     border-radius: 3px;
+    border: 0;
     font-family: 'Roboto', sans-serif;
     padding: 10px;
+    margin-right: 20px;
     width: 40%;
-    border: 0;
+}
+
+.btn-blue{
+    background-color: var(--color-secondary);
+    border-radius: 3px;
+    color: var(--color-light);
+    display: inline-block;
+    padding: 8px 25px;
+}
+
+
+/* Mail and no. of mail section */
+.col-1 h1{
+    color: var(--color-primary);
+}
+
+.fa-style{
+    padding: 6px 25px;
+    font-size: 16px;
+    background: #f1f1f1;
+    border: 1px solid #d3d3d3;
+    text-align: center;
+    margin: 0 25px;
+}
+
+#mails-check{
+    font-size: 16px;
+    height: 30px;
+    background: #f1f1f1;
+    border: 1px solid #d3d3d3;
+    text-align: center;
+}
+
+.more{
+    font-family: 'Roboto', sans-serif;
+}
+
+.arrow-btn{
+    padding: 6px 25px;
+    font-size: 16px;
+    background: #f1f1f1;
+    border: 1px solid #d3d3d3;
+    text-align: center;
+}
+
+div.col-3>:first-child{
+    margin-right: 15px;
+}
+
+.border-row{
+    border-top: 1px solid var(--color-light-grey);
+    border-bottom: 1px solid var(--color-light-grey);
+}
+
+
+/* left box sectio */
+.left-box {
+    width: 20%;
+}
+
+.btn-compose{
+    background-color: var(--color-primary);
+    border-radius: 3px;
+    color: var(--color-light);
+    display: inline-block;
+    font-family: 'Roboto', sans-serif;
+    font-size: 16px;
+    font-weight: bold;
+    padding: 12px 24px;
+    text-transform: uppercase;
+}
+
+.dashboard-menu-compose{
+    margin-bottom: 15px;
+}
+
+
+
+/* right Box */
+.right-box{
+    width: 80%;
+    background-color: var(--color-light-grey);
 }
