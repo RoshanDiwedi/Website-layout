@@ -161,7 +161,7 @@ nav .nav-box{
 }
 
 .banner-bg-img::before{
-    background-color: rgba(0, 0, 0, 0.4);
+    background-color: rgba(0, 0, 0, 0.3);
     content: '';
     height: 80vh;
     width: 100%;
@@ -170,7 +170,7 @@ nav .nav-box{
 }
 
 .banner-bg-img::after{
-    background-color: rgba(0, 0, 0, 0.4);
+    background-color: rgba(0, 0, 0, 0.3);
     content: '';
     height: 80vh;
     width: 100%;
