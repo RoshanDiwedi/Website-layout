@@ -55,22 +55,25 @@
 
         <section id="mail-section">
             <div class="main-container row border-row">
-                <div class="col-1">
-                    <h1>Mail</h1>
-                </div>
+                
+                <div class="col-1 container">
+                    <div class="col-1-heading">
+                        <h1>Mail</h1>
+                    </div>
 
-                <div class="col-2">
-                    <div class="main-container">
-                        <label for="mails"></label>
-                        <select name="" id="mails-check">
-                            <option value="All">All</option>
-                            <option value="">None</option>
-                            <option value="">Read</option>
-                            <option value="">unread</option>
-                            <option value="">starred</option>
-                        </select>
-                        <i class="fa fa-refresh fa-style" aria-hidden="true"></i>
-                        <a href="#" class="more">More</a>
+                    <div class="col-2">
+                        <div class="main-container">
+                            <label for="mails"></label>
+                            <select name="" id="mails-check">
+                                <option value="All">All</option>
+                                <option value="">None</option>
+                                <option value="">Read</option>
+                                <option value="">unread</option>
+                                <option value="">starred</option>
+                            </select>
+                            <i class="fa fa-refresh fa-style" aria-hidden="true"></i>
+                            <a href="#" class="more">More</a>
+                        </div>
                     </div>
                 </div>
 
@@ -78,6 +81,7 @@
                     <p>1-19 of 19</p>
                     <i class="fa-solid arrow-btn fa-arrow-left"></i>
                     <i class="fa-solid arrow-btn fa-arrow-right"></i>
+                    <i class="fa-solid arrow-btn fa-gear"></i>
                 </div>
             </div>
         </section>
@@ -114,7 +118,15 @@
 
                 <!-- right email column -->
                 <div class="right-box">
-
+                    <div class="main-mail-col">
+                        <tbody>
+                            <tr class="mail-txt">
+                                <td class="mail-check">
+                                    <input type="checkbox">
+                                </td>
+                            </tr>
+                        </tbody>
+                    </div>
                 </div>
             </div>
         </section>
