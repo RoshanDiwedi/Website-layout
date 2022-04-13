@@ -224,8 +224,9 @@ div.col-3>:first-child{
 
 /* left box sectio */
 .left-box {
-    width: 250px;
     background-color: var(--color-light);
+    max-width: 250px;
+    width: 100%; 
 }
 
 .btn-compose{
