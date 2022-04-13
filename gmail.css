@@ -9,7 +9,7 @@
     --color-secondary: #1a73e8;
     --color-dark: #202124;
     --color-light: #ffffff;
-    --color-light-grey: #f1f1f1;
+    --color-light-grey: #f1f1f1;;
 }
 
 
@@ -50,6 +50,10 @@ p{
     font-family: 'Roboto', sans-serif;
 }
 
+span{
+    font-family: 'Roboto', sans-serif;
+}
+
 ul li a{
     font-family: 'Roboto', sans-serif;
     color: var(--color-dark);
@@ -60,6 +64,11 @@ ul li a{
 
 nav a{
     font-family: 'Roboto', sans-serif;
+}
+
+.txt-heavy{
+    color: var(--color-dark);
+    font-weight: bold;
 }
 
 .row{
@@ -249,6 +258,28 @@ div.col-3>:first-child{
 
 /* right Box */
 .right-box{
-    width: auto;
-    background-color: var(--color-light-grey);
+    width: 100%;
+}
+
+.fa-star{
+    margin: 0 15px;
+}
+
+.one-zx-row{
+    padding: 15px;
+    border-top: 1px solid var(--color-light-grey);
+}
+
+.one-zx{
+    display: flex;
+    align-items: center;
+    max-width: 250px;
+    width: 100%;
+}
+
+.second-zy{
+    display: flex;
+    align-items: center;
+    max-width: 730px;
+    width: 100%;
 }
