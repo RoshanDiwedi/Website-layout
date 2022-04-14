@@ -573,7 +573,7 @@ div.banner-bg-img>:last-child{
         display: block;
     }
 
-    #check{
+    input#check{
         display: none;
     }
 
