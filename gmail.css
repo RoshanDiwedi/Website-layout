@@ -263,6 +263,8 @@ div.col-3>:first-child{
 
 .fa-star{
     margin: 0 15px;
+    font-size: 20px;
+    color: #dcdcdc;
 }
 
 .one-zx-row{
@@ -280,6 +282,14 @@ div.col-3>:first-child{
 .second-zy{
     display: flex;
     align-items: center;
-    max-width: 730px;
+    max-width: 670px;
+    overflow: hidden;
     width: 100%;
+}
+
+.third-zz{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-weight: bold;
 }
