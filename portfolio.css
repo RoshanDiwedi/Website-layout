@@ -66,6 +66,22 @@ img {
     max-width: 100%;
 }
 
+.btn {
+    background-color: DodgerBlue;
+    border: none;
+    color: white;
+    padding: 12px 30px;
+    cursor: pointer;
+    font-size: 20px;
+    margin-top: 25px;
+    display: inline-block;
+    text-decoration: none;
+  }
+
+  .btn a{
+    text-decoration: none;
+  }
+
 .container {
     max-width: 1400px;
     width: 100%;
@@ -186,7 +202,7 @@ img {
 }
 
 .intro_demo_list ul li {
-    margin: 0 0 100px;
+    margin: 0 0 50px;
     width: 50%;
     float: left;
     padding: 0 25px;
@@ -233,8 +249,8 @@ img {
     padding: 50px 50px;
     background-color: rgb(45, 45, 45);
     text-align: center;
-    margin-top: 50px;
     margin: 0 auto;
+    margin-top: 50px;
 }
 
 .contact_details{
