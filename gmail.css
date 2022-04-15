@@ -288,6 +288,7 @@ div.col-3>:first-child{
     max-width: 670px;
     overflow: hidden;
     width: 100%;
+    white-space: nowrap;
 }
 
 .third-zz{
@@ -295,6 +296,9 @@ div.col-3>:first-child{
     align-items: center;
     justify-content: center;
     font-weight: bold;
+    max-width: 65px;
+    margin-left: 15px;
+    width: 100%;
 }
 
 
