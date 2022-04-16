@@ -14,6 +14,7 @@ font-family: 'Poppins', sans-serif; */
     --color-primary: #37756C;
     --color-dark: #2c2c2c;
     --color-grey: #C2C2C2;
+    --color-main: #EE7700;
 }
 
 /* Global Section */
@@ -54,7 +55,7 @@ h3{
 
 h4{
     font-family: 'Poppins', sans-serif;
-    font-size: 25px;
+    font-size: 22px;
 }
 
 p{
@@ -94,6 +95,12 @@ a.btn {
 }
 
 
+/* mobile logo navigation */
+.mobile-logo{
+    display: none;
+}
+
+
 /* left section */
 .left-margin-top{
     margin-top: 2rem;
@@ -110,6 +117,7 @@ a.btn {
     width: 100%;
 }
 .logo img{
+    max-width: 200px;
     width: 100%;
 }
 
@@ -148,7 +156,7 @@ a.btn {
 }
 
 .project-center-txt p{
-    font-size: 25px;
+    font-size: 20px;
     color: var(--color-grey);
     line-height: 2;
 }
@@ -192,4 +200,135 @@ a.btn {
 .grid{
     text-align: end;
     width: 20%;
+}
+
+
+/* Profile section */
+.profile{
+    flex-wrap: wrap;
+}
+
+.profile-col-box{
+    width: calc(33% - 10px);
+    text-align: center;
+    padding: 20px;
+    background: var(--color-light);
+    margin-bottom: 20px;
+    
+}
+
+.profile-img{
+    display: flex;
+    justify-content: center;
+}
+
+.profile-img img{
+    max-width: 120px;
+    width: 100%;
+}
+
+.profile-center-heading{
+    margin: 20px 0px 30px;
+}
+
+.fa-regular{
+    color: var(--color-main);
+}
+
+.fa-calendar-days{
+    margin: 0 15px;
+}
+
+
+/* Media Query */
+@media screen and (max-width: 767px){
+
+    h2 {
+        font-size: 50px;
+    }
+
+    h3 {
+        font-size: 25px;
+    }
+
+    h4 {
+        font-size: 20px;
+    }
+
+    .mobile-logo{
+        display: block;
+        text-align: center;
+        padding: 25px;
+        background: var(--color-grey);
+        margin-bottom: 80px;
+    }
+
+    .mobile-logo img{
+        max-width: 200px;
+        width: 100%;
+    }
+
+    .left-section{
+        display: none;
+    }
+
+    .right-section{
+        padding: 0;
+        width: 100%;
+    }
+
+    .project-center-txt p {
+        font-size: 16px;
+    }
+
+    a.btn {
+        font-size: 16px;
+    }
+    
+    .hire-txt-box a {
+        font-size: 25px;
+    }
+
+    .container {
+        flex-direction: column;
+        text-align: center;
+    }
+
+    .project-cols {
+        width: 100%;
+    }
+
+    .candidate {
+        padding: 40px 0px;
+    }
+
+    .candidate-heading{
+        text-align: center;
+    }
+
+    .search-bar {
+        width: 100%;
+    }
+
+    .person {
+        width: 100%;
+        margin: 30px 0px 20px;
+    }
+
+    .grid {
+        width: 100%;
+    }
+
+    .profile {
+        padding-bottom: 25px;
+    }
+
+    .profile-col-box {
+        width: 100%;
+    }
+
+    .mobile-padding{
+        padding: 0 25px;
+    }
+
 }
