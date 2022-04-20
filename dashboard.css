@@ -95,11 +95,18 @@ a.btn {
 }
 
 
-/* mobile logo navigation */
+/* mobile navigation */
 .mobile-logo{
     display: none;
 }
 
+#check{
+    display: none;
+}
+
+label .fa-solid{
+    display: none;
+}
 
 /* left section */
 .left-margin-top{
@@ -327,8 +334,11 @@ a.btn {
         width: 100%;
     }
 
+
+    /* mobile navigation */
     .mobile-padding{
         padding: 0 25px;
     }
 
+    ;
 }

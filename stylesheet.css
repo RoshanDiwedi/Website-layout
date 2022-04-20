@@ -594,7 +594,7 @@ div.banner-bg-img>:last-child{
     }
 
     input:checked ~ label>.fa-bars{
-        display: block;
+        display: none;
         color: var(--color-dark);
     }
 
