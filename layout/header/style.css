@@ -1,0 +1,159 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;700&display=swap');
+
+*,::before,::after{
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+    list-style-type: none;
+    text-decoration: none;
+}
+
+body{
+    font-family: 'Poppins', sans-serif;
+}
+
+.row{
+    max-width: 1200px;
+    width: 100%;
+    margin: 0 auto;
+}
+
+.container{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+/* header section */
+.header{
+    padding: 20px 0;
+}
+
+.nav nav a{
+    color: rgb(36, 36, 36);
+    margin-left: 15px;
+    letter-spacing: 1px;
+}
+
+.nav nav a:hover,
+.nav nav a:focus{
+    color: #0073B5;
+}
+
+/* Powered Section */
+.powered-txt{
+    width: 50%;
+}
+
+.container .powered-txt h1{
+    font-size: 45px;
+    text-transform: capitalize;
+    color: #0073B5;
+    line-height: 1.3;
+    margin-bottom: 20px;
+}
+
+.btn-icon{
+    width: 45%;
+    margin-top: 30px;
+}
+
+.btn-icon .btn {
+    background-color: #0073B5;
+    color: #fff;
+    padding: 10px 20px;
+    text-transform: capitalize;
+    box-shadow: 0px 2px 10px 1px #ccc;
+}
+
+.btn-icon .btn {
+    background-color: #0073B5;
+    color: #fff;
+    padding: 10px 20px;
+    text-transform: capitalize;
+    box-shadow: 0px 2px 10px 1px #ccc;
+}
+
+.btn-icon .btn:hover{
+    background-color: #41AD49;
+}
+
+.side-img{
+    width: 50%;
+}
+
+.side-img img{
+    width: 100%;
+}
+
+.header input[type="checkbox"]{
+    display: none;
+}
+
+.fa-solid{
+    display: none !important;
+}
+
+
+
+@media screen and (max-width: 586px){
+    .container{
+        padding: 0 30px;
+    }
+    
+    .container .powered-txt h1{
+        font-size: 30px;
+        text-transform: capitalize;
+        color: #0073B5;
+        line-height: 1.3;
+        margin-bottom: 20px;
+    }
+
+    .nav nav{
+        display: none;
+    }
+
+    .btn-icon {
+        width: 100%;
+        padding: 0;
+    }
+
+    nav{
+        display: flex !important;
+        flex-direction: column;
+        line-height: 2.5;
+    }
+
+    .nav{
+        background-color: #0073B5;
+        position: absolute;
+        top: 0;
+        right: 0;
+        height: 100%;
+        padding: 20px;
+        width: 180px;
+    }
+
+    .nav nav a{
+        color: #fff;
+    }
+    
+    label .fa-solid{
+        position: absolute;
+        z-index: 2;
+        color: #fff;
+    }
+
+    .fa-xmark{
+        display: block;
+    }
+
+    .fa-bars{
+        display: none;
+    }
+
+    #nav-bar:checked ~ .nav nav{
+        display: block;
+    }
+  
+}
