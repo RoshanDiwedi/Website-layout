@@ -40,23 +40,111 @@ body{
     background: linear-gradient(135deg, #71b7e6, #9b59b6);
     border-radius: 25px;
     left: 0;
-    bottom: 0;
+    bottom: -10px;
 }
 
 .container form .user-details{
     display: flex;
     flex-wrap: wrap;
     justify-content: space-between;
+    margin-top: 20px;
 }
 
 form .user-details .input-box{
     width: calc(100% / 2 - 20px);
-    margin: 15px 0 10px;
+    margin: 15px 0 15px;
 }
 
 form .input-box input{
     width: 100%;
     height: 40px;
-    padding: 20px;
+    padding-left: 20px;
     font-size: 16px;
+    border: 1px solid #ccc;
+    border-bottom: 2px solid #ccc;
+    border-radius: 3px;
+    color: #010101;
+    margin-top: 10px;
+    transition: all 0.5s ease;
+    border-color: #ccc;
 }
+
+form .input-box input:focus,
+form .input-box input:valid{
+    border-color: #71b7e6;
+}
+
+form .gender-details .gender-title{
+    font-size: 20px;
+    font-weight: 500px;
+}
+
+.gender-details .category{
+    width: 80%;
+    display: flex;
+    justify-content: space-between;
+    margin: 15px 0;
+}
+
+.gender-details .category label{
+    display: flex;
+    align-items: center;
+}
+
+.gender-details .category .dot{
+    width: 18px;
+    height: 18px;
+    background-color: #d9d9d9;
+    margin-right: 10px;
+    border-radius: 50%;
+    border: 5px solid transparent;
+}
+
+#dot-1:checked ~ .category .one,
+#dot-2:checked ~ .category .two,
+#dot-3:checked ~ .category .three{
+    border: 5px solid #d9d9d9;
+    background-color: #71b7e6;
+}
+
+form input[type="radio"]{
+    display: none;
+}
+
+form .button input{
+    width: 100%;
+    padding: 15px;
+    font-size: 18px;
+    font-weight: 500;
+    background: linear-gradient(135deg, #71b7e6, #9b59b6);
+    color: #fff;
+    font-family: 'Poppins', sans-serif;
+    border: none;
+    border-radius: 5px;
+    margin-top: 40px;
+}
+
+form .button input:hover{
+    background: linear-gradient(-135deg, #71b7e6, #9b59b6);
+}
+
+/* media Query */
+@media  screen and (max-width: 586px){
+    form .user-details .input-box {
+        width: 100%;
+        margin: 15px 0;
+    }
+
+    .gender-details .category {
+        width: 100%;
+    }
+
+    .container form .user-details{
+        max-height: 350px;
+        overflow-y: scroll;
+    }
+
+    .gender-details{
+        padding-top: 25px;
+    }
+} 

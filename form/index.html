@@ -7,6 +7,9 @@
 
     <!-- css link -->
     <link rel="stylesheet" href="style.css">
+
+    <!-- favicon -->
+    <link rel="icon" type="image/x-icon" href="fav.ico">
     <title>Form Layout</title>
 </head>
 <body>
@@ -28,7 +31,7 @@
                 </div>
                 <div class="input-box">
                     <span class="details">Phone Number</span>
-                    <input type="number" placeholder="Enter your phone number" id="">
+                    <input type="tel" placeholder="Enter your phone number" id="">
                 </div>
                 <div class="input-box">
                     <span class="details">Password</span>
@@ -41,18 +44,21 @@
             </div>
 
             <div class="gender-details">
+                <input type="radio" name="gender" id="dot-1">
+                <input type="radio" name="gender" id="dot-2">
+                <input type="radio" name="gender" id="dot-3">
                 <span class="gender-title">Gender</span>
                 <div class="category">
-                    <label for="">
+                    <label for="dot-1">
                         <span class="dot one"></span>
                         <span class="gender">Male</span>
                     </label>
-                    <label for="">
-                        <span class="dot one"></span>
+                    <label for="dot-2">
+                        <span class="dot two"></span>
                         <span class="gender">Female</span>
                     </label>
-                    <label for="">
-                        <span class="dot one"></span>
+                    <label for="dot-3">
+                        <span class="dot three"></span>
                         <span class="gender">Prefer not to say</span>
                     </label>
                 </div>
