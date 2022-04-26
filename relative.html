@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="shortcut icon" href="favicon.ico" type="image/x-icon">
+    <title>Document</title>
+
+    <style>
+        *{
+            margin: 0;
+            padding: 0;
+        }
+        .container_1{
+            width: 400px;
+            height: 400px;
+            background-color: red;
+        }
+
+        .container_2{
+            width: 400px;
+            height: 400px;
+            background-color: green;
+            position: relative;
+        }
+        .absolute{
+            width: 150px;
+            height: 150px;
+            border: 2px solid #000;
+            position: absolute;
+            top: 50%;
+            left: 50%;
+            transform: translate(-50%);
+        }
+        
+    </style>
+</head>
+<body>
+    <div class="container_1"></div>
+    <div class="container_2">
+        <div class="absolute">
+
+        </div>
+    </div>
+</body>
+</html>
