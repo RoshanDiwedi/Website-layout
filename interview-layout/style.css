@@ -21,6 +21,7 @@
     --color-light: #fff;
     --color-light-grey: #d1d1d1;
     --color-grey: #666666;
+    --color-black: #000000;
 }
 
 /* Global CSS */
@@ -76,7 +77,8 @@ nav a:focus{
 
 /* Main CSS */
 .main-container{
-    width: 1200px;
+    max-width: 1200px;
+    width: 100%;
     margin: 0 auto;
 }
 
@@ -97,8 +99,9 @@ nav a:focus{
 }
 
 #main{
-    padding-bottom: 150px;
+    padding-bottom: 90px;
 }
+
 
 /* Header Section */
 .header{
@@ -116,6 +119,7 @@ nav a:focus{
 }
 
 .arrow-para-warpper{
+    display: flex;
     margin-top: 15px;
 }
 
@@ -127,20 +131,20 @@ nav a:focus{
 
 .arrow img{
     animation: jump 2s infinite;
-    transition: cubic-bezier();
+    transition: ease-in;
 }
 
 @keyframes jump{
     0%{
-        margin-top: 49px;
+        margin-top: 50px;
     }
 
     50%{
-        margin-top: 0;
+        margin-top: 20px;
     }
 
     100%{
-        margin-top: 49px;
+        margin-top: 50px;
     }
 }
 
@@ -151,11 +155,17 @@ nav a:focus{
     cursor: pointer;
 }
 
-.banner-img img{
-    animation: fill 4s ease-in-out 6s forwards;
+.banner-img{
+    max-width: 600px;
+    width: 100%;
     height: 400px;
-    max-width: 100%;
+    min-height: 100%;
+    background-image: url('banner-img.jpg');
+    background-size: cover;
+    animation: fill 4s ease-in-out 1s forwards;
+    background-repeat: no-repeat;
 }
+
 
 @keyframes fill{
     0%{
@@ -172,9 +182,11 @@ nav a:focus{
     margin-top: 100px;
 }
 
-#about h1{
+#about h3{
     text-align: center;
     margin-bottom: 25px;
+    font-family: poppin-bold;
+    font-size: 40px;
 }
 
 .placeholder{
@@ -249,5 +261,125 @@ nav a:focus{
     
     100%{
         margin-left: 5px;
+    }
+}
+
+#about .container:nth-child(3){
+    margin: 30px 0;
+}
+
+/* footer Section */
+#footer{
+    background-color: var(--color-black);
+    padding: 60px 40px;
+}
+
+.footer-logo{
+    display: flex;
+    align-items: center;
+}
+
+.footer-logo img{
+    max-width: 30%;
+}
+
+.footer-logo span{
+    color: var(--color-light);
+    vertical-align: middle;
+}
+
+#footer .social-icon span{
+    color: var(--color-grey);
+    font-family: poppin-bold;
+    margin-left: 15px;
+}
+
+#footer .social-icon span:hover{
+    color: var(--color-light);
+}
+
+
+/* Mobile navigation */
+
+
+
+/* Media Query Section */
+@media screen and (max-width: 767px) {
+    .main-container {
+        padding: 0px 25px;
+    }
+    .container{
+        flex-direction: column;
+    }
+
+    .col-left {
+        max-width: 100%;
+        width: 100%;
+    }
+
+    .col-right {
+        max-width: 100%;
+        width: 100%;
+        margin-top: 30px;
+    }
+
+    .banner-text {
+        padding-right: 0px;
+    }
+
+    .banner-img {
+        height: 300px;
+        background-size: cover;
+    }
+
+    .arrow {
+        max-width: 100%;
+        width: 100%;
+        height: 90px;
+    }
+
+    .arrow img {
+        animation: jump 2s infinite;
+        transition: ease-in;
+    }
+
+    @keyframes jump{
+        0%{
+            margin-top: 0px;
+        }
+    
+        50%{
+            margin-top: 20px;
+        }
+    
+        100%{
+            margin-top: 0px;
+        }
+    }
+
+    .arrow-para-warpper{
+        flex-direction: column;
+    }
+
+    #about {
+        margin-top: 60px;
+    }
+
+    .placeholder {
+        padding-right: 0px;
+    }
+
+    .nav-icon .solid{
+        width: 20px;
+        position: absolute;
+        top: 30px;
+        right: 30px;
+    }
+    
+    nav a{
+        display: block;
+        margin-left: 0px;
+        text-align: center;
+        color: #fff;
     }
 }
