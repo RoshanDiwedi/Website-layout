@@ -152,16 +152,17 @@ nav a:focus{
 }
 
 .banner-img img{
+    animation: fill 4s ease-in-out 6s forwards;
+    height: 400px;
     max-width: 100%;
-    animation: fill .8s forwards .20s;
 }
 
 @keyframes fill{
-    form{
+    0%{
         width: 0%;
     }
 
-    to{
+    100%{
         width: 100%;
     }
 }
