@@ -378,7 +378,7 @@ label .solid{
 
     /* mobile navigation */
     .nav{
-        background: rgba(0, 0, 0, 0.5);
+        background: var(--color-primary);
         height: 100vh;
         padding-top: 150px;
         position: absolute;
@@ -386,7 +386,7 @@ label .solid{
         z-index: 1;
     }
 
-    .nav-icon .solid{
+    .solid{
         width: 20px;
         position: absolute;
         top: 30px;
@@ -406,11 +406,32 @@ label .solid{
         display: block;
     }
 
-    label:checked .solid-bars ~ .nav{
-        display: none;
-    }
-
     #toggle-nav{
         z-index: 7;
     }
+
+    img.solid-close{
+        display: none;
+    }
+
+    .nav{
+        display: none;
+    }
+
+    input#toggle-nav:checked ~ .nav{
+        display: block;
+    }
+
+    input#toggle-nav:checked ~ label > img.solid-close{
+        display: block;
+    }
+
+    input#toggle-nav:checked ~ label > img.solid-bars{
+        display: none;
+    }  
+    
+    #toggle-nav[type = checkbox]{
+        display: none;
+    }
 }
+
