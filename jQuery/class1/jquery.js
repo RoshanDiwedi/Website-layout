@@ -7,6 +7,9 @@ $(document).ready(function(){
 });
 
 $(document).ready(function(){
-    var a = $('.box-1').html()
+    var a = $('.box-1').html();
         console.log(a);
-})
+
+    var b = $(".box-2").html();
+        console.log(b);
+});
