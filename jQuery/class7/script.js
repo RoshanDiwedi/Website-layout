@@ -1,5 +1,5 @@
 // // Get methods 
-$("document").ready(function(){
+$(document).ready(function(){
 
     // HTML Method
     var a =  $(".box").html();
@@ -17,7 +17,7 @@ $("document").ready(function(){
 
 
 // Val method
-$("document").ready(function(){
+$(document).ready(function(){
     $("#form").submit(function(){
         var name = $("#name").val();
         var cla = $("#class").val();
