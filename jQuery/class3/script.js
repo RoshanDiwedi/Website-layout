@@ -33,15 +33,15 @@
 
 
 // mouse CONTEXTMENU(Right click) click function
-$(document).ready(function(){
-    $(".box").click(function(){
-        $(".box").css("background-color", "yellow");
-    });
+// $(document).ready(function(){
+//     $(".box").click(function(){
+//         $(".box").css("background-color", "yellow");
+//     });
 
-    $(".box").contextmenu(function(){
-        $(".box").css("background-color", "blue");
-    });
-});
+//     $(".box").contextmenu(function(){
+//         $(".box").css("background-color", "blue");
+//     });
+// });
 
 
 
@@ -55,3 +55,5 @@ $('document').ready(function(){
         $(".box").css("background-color", "purple");
     });
 });
+
+

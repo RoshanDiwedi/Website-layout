@@ -30,9 +30,9 @@
 
 
 // // selector nth child greater than 
-// $(document).ready(function(){
-//     $("#list li:gt(2)").css("border", "2px solid red")
-// })
+$(document).ready(function(){
+    $("#list li:gt(2)").css("border", "2px solid red")
+})
 
 
 

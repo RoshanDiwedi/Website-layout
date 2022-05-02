@@ -27,6 +27,7 @@ $(document).ready(function(){
         $(this).css("background-color", "yellow");
     });
 
+
     // Submit function its work with form ID have a look in HTML
     $("#form").submit(function(){
         alert("thank you for submission");
@@ -34,5 +35,3 @@ $(document).ready(function(){
 
     
 });
-
-

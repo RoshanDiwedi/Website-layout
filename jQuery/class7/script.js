@@ -1,4 +1,4 @@
-// Get methods 
+// // Get methods 
 $("document").ready(function(){
 
     // HTML Method
