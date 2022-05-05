@@ -1,11 +1,19 @@
 $(document).ready(function(){
 
     // Add class method
-    $("#btn-click").on("click", function(){
-        $(".box, h2").addClass("display-none heading-size")
+    $("#add-class").on("click", function(){
+        $(".box").addClass("background-change")
     });
 
 
-    // Add class method
-    $
+    // remove class method
+    $("#remove-class").on("click", function(){
+        $(".box").removeClass("background-change")
+    });
+
+    
+    // toggle class method
+    $("#toggle-class").click(function(){
+        $(".box").toggleClass("background-change")
+    });
 });

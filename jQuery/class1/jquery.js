@@ -13,3 +13,16 @@ $(document).ready(function(){
     var b = $(".box-2").html();
         console.log(b);
 });
+
+
+$(document).ready(function(){
+    $(window).on("mouseenter", function(){
+        $(".box-1").css("background-color", "red")
+    });
+
+    $(window).on("mouseleave", function(){
+        $(".box-1").css("background-color", "")
+    });
+    
+});
+

@@ -1,24 +1,12 @@
 .box{
-    background-color: tan;
-    border: 1px solid #000;
-    padding: 15px 30px;
+    padding: 20px;
+    background-color: yellow;
+    color: #000;
+    margin-bottom: 25px;
 }
 
-#btn-click{
-    margin-top: 30px;
-}
-
-.display-none{
+.background-change{
     background-color: #000;
     color: #fff;
-}
-
-.heading-size{
-    font-size: 25px;
-}
-
-span{
-    width: 80px;
-    display: inline-block;
-    margin: 10px 0;
+    padding: 20px;
 }
