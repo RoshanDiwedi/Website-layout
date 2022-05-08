@@ -4,8 +4,8 @@ $(document).ready(function(){
     });
 
     $(".fa-solid").on("click", function(){
-        $("#mobile-nav").toggleClass("mobile-nav-block")
-        $("body").css("background", "red")
+        $(".mobile-nav").toggleClass("mobile-nav-block")
+        
     });
     
 });
