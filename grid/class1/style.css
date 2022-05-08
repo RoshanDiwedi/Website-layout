@@ -1,0 +1,379 @@
+/* Font link */
+@font-face {
+    font-family: metro-light;
+    src: url("metropolis-light.otf");
+}
+
+@font-face {
+    font-family: metro-regular;
+    src: url("metropolis.regular.otf");
+}
+
+@font-face {
+    font-family: metro-medium;
+    src: url("metropolis.medium.otf");
+}
+
+@font-face {
+    font-family: metro-semi-bold;
+    src: url("metropolis-semi-bold.otf");
+}
+
+@font-face {
+    font-family: metro-bold;
+    src: url("metropolis-bold.otf");
+}
+
+@font-face {
+    font-family: metro-black;
+    src: url("metropolis-black.otf");
+}
+
+/* Root element */
+:root{
+    --color-primary: #000;
+    --color-secondary: #FDBA2F;
+    --color-grey: #707070;
+    --color-light: #fff;
+
+    /* font-family */
+    --font-light: metro-light;
+    --font-regular: metro-regular;
+    --font-medium: metro-medium;
+    --font-semi-bold: metro-semi-bold;
+    --font-bold: metro-bold;
+    --font-black: metro-black;
+}
+
+
+/* global CSS */
+*, ::after, ::before{
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+    list-style-type: none;
+}
+
+html{
+    scroll-behavior: smooth;
+}
+
+body{
+    margin: 0;
+    padding: 0;
+    list-style-type: none;
+}
+
+h1{
+    font-family: metro-bold;
+    font-size: 66px;
+}
+
+h2{
+    font-family: metro-black;
+    font-size: 60px;
+}
+
+h3{
+    font-family: metro-black;
+    font-size: 55px;
+}
+
+h4{
+    color: var(--color-grey);
+    font-family: metro-black;
+    font-size: 45px;
+}
+
+p{
+    font-family: var(--font-medium);
+}
+
+
+/* My globle css define */
+.main-container{
+    margin: 0 auto;
+    max-width: 1280px;
+    width: 100%;
+}
+
+.container{
+    display: flex;
+    justify-content: space-between;
+}
+
+.container-grid {
+    display: grid;
+    column-gap: 30px;
+    grid-template-columns: auto auto auto auto auto;
+    margin-top: 80px;
+}
+
+.align-center{
+    align-items: center;
+}
+
+.left-col{
+    max-width: 50%;
+    width: 100%;
+}
+
+.right-col{
+    max-width: 50%;
+    width: 100%;
+}
+
+.color-secondary{
+    color: var(--color-secondary);
+}
+
+.font-light{
+    font-family: var(--font-light);
+}
+
+.font-regular{
+    font-family: var(--font-regular);
+}
+
+.font-medium{
+    font-family: var(--font-medium);
+}
+
+.font-bold{
+    font-family: var(--font-bold);
+}
+
+.font-semi-bold{
+    font-family: var(--font-bold);
+}
+
+.font-black{
+    font-family: var(--font-bold);
+}
+
+/* Header Section */
+#header{
+    padding: 16px 0;
+    box-shadow: 0px 3px 6px #00000029;
+}
+
+.main-container .logo{
+    max-width: 244px;
+    width: 100%;
+}
+
+.main-container nav a{
+    color: var(--color-primary);
+    font-family: var(--font-bold);
+    font-size: 23px;
+    margin-left: 23px;
+    text-decoration: none;
+}
+
+/* Banner Section */
+#banner{
+    padding-bottom: 90px;
+    background-image: url("images/banner-dotted-img/right-dotted.jpg");
+    background-repeat: no-repeat;
+    background-position: 105% 24%;
+}
+
+.container-logo{
+    display: flex;
+}
+
+.main-container .banner-left-col{
+    padding-top: 54px;
+}
+
+.logo-1{
+    padding-right: 15px;
+}
+
+.logo-2{
+    padding-left: 15px;
+    border-left: 1px solid var(--color-grey);
+}
+
+.banner-para{
+    color: var(--color-primary);
+    font-family: var(--font-bold);
+    font-size: 28px;
+}
+
+.banner-font-bold{
+    font-family: var(--font-bold);
+    font-size: 30px;
+}
+
+.banner-font-semibold{
+    font-family: var(--font-semi-bold);
+}
+
+.banner-heading{
+    margin-top: 30px;
+}
+
+.banner-heading h2{
+    margin-bottom: 13px;
+}
+
+.banner-heading img{
+    margin: 27px 0;
+}
+
+.powered{
+    margin-top: 36px;
+}
+
+.powered-font{
+    font-size: 18px;
+    margin-bottom: 10px;
+}
+
+/* form section */
+.form{
+    background-image: url("images/form-bg/form-bg.png");
+    background-position: center;
+    box-shadow: 0px 12px 20px #00000029;
+    border-radius: 10px;
+    opacity: 0.97;
+    max-width: 413px;
+    width: 100%;
+    padding: 50px 32px;
+    margin: 0 auto;
+    background-repeat: no-repeat;
+}
+
+
+.form input{
+    width: 100%;
+    background: transparent;
+    border: none;
+    border-bottom: 2px solid var(--color-primary);
+    padding: 8px 10px;
+    font-size: 16px;
+}
+
+.form-input{
+    padding: 0 25px;
+}
+
+.form .inp{
+    margin-bottom: 30px;
+}
+
+.btn{
+    color: var(--color-light);
+    width: 140px;
+    height: 41px;
+    background: var(--color-secondary);
+    border-radius: 37px;
+    opacity: 1;
+    border: 0;
+    text-align: center;
+}
+
+button.btn{
+    margin: 0 auto;
+    display: inherit;
+}
+
+.banner-right-col{
+    padding-top: 64px;
+    padding-bottom: 131px;
+    background-image: url("images/right-angle-border/right-angle.jpg");
+    background-repeat: no-repeat;
+    background-position: bottom left;
+}
+
+/* Pods Section */
+
+.pods{
+    padding: 20px 18px 60px;
+    box-shadow: 0px 12px 20px #00000029;
+    border-radius: 10px;
+    opacity: 1;
+    text-align: center;
+    position: relative;
+    background-image: url("images/border.jpg");
+    background-repeat: no-repeat;
+
+}
+
+.pods-title{
+    font-size: 25px;
+    margin-bottom: 10px;
+}
+
+.pods-para{
+    font-size: 15px;
+    line-height: 1.5;
+}
+
+.pod-button{
+    display: flex;
+    justify-self: center;
+}
+
+.btn-light{
+    color: var(--color-primary);
+    font-size: 20px;
+    width: 246px;
+    height: 63px;
+    background: var(--color-light);
+    border: 0;
+    text-align: center;
+    box-shadow: 0px 6px 16px #FDBA2F36;
+    border-radius: 37px;
+    opacity: 1;   
+    margin: 82px auto;
+    transition: 0.3s;
+}
+
+.btn-light:hover{
+    color: var(--color-light);
+    background: var(--color-secondary);
+    box-shadow: 0px 6px 16px #FDBA2F36;
+}
+
+
+/* Media Query */
+@media screen and (min-width: 480px) and (max-width: 767px){
+
+    .main-container{
+        padding: 0 30px;
+    }
+
+    .main-container nav{
+        background-color: var(--color-primary);
+        position: absolute;
+        right: 0;
+        top: 0;
+        padding: 35px 50px;
+        z-index: 5;
+        bottom: 0;
+    }
+
+    .main-container nav a{
+        color: var(--color-light);
+        display: block;
+        margin-bottom: 25px;
+    }
+
+    .container-grid {
+        column-gap: 20px;
+        grid-template-columns: auto auto auto;
+        row-gap: 20px;
+    }
+
+    .mobile-nav{
+        display: none;
+    }
+
+    .mobile-nav-block{
+        display: block;
+    }
+
+
+}
