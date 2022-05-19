@@ -7,6 +7,11 @@
     <title>Gym site</title>
     <!-- style css -->
     <link rel="stylesheet" href="style.css" />
+    <!-- slick slider CSS -->
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/slick-carousel/1.8.1/slick.css"
+    />
   </head>
   <body>
     <header id="header">
@@ -68,9 +73,27 @@
 
     <!-- Banner Section -->
     <section id="banner">
-      <div class="banner-slider full-slider"></div>
+      <div class="full-slider">
+        <ul class="banner-slider">
+          <li class="slide-img img-1"><h3>Roshan</h3></li>
+          <li class="slide-img img-2"><h3>Atul</h3></li>
+          <li class="slide-img img-3"><h3>Amit</h3></li>
+          <li class="slide-img img-4"><h3>Raman</h3></li>
+        </ul>
+      </div>
     </section>
 
+    <!-- jQuery js -->
+    <script
+      src="https://code.jquery.com/jquery-3.6.0.min.js"
+      integrity="sha256-/xUj+3OJU5yExlq6GSYGSHk7tPXikynS7ogEvDej/m4="
+      crossorigin="anonymous"
+    ></script>
+
+    <!-- Slick Slider CDN -->
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/slick-carousel/1.8.1/slick.min.js"></script>
+
+    <!-- Script js -->
     <script src="script.js"></script>
   </body>
 </html>
