@@ -1,16 +1,32 @@
-$(document).ready(function () {
-  var valOne = $("#name").val();
-  $("#btn").on("click", function (e) {
-    e.preventDefault();
+$(document).ready(function(){
 
-    // var valTwo = $("#class").val();
-    // var valThree = $("#country").val();
+    // on function
+    $("#btn-1").on("click", function(){
+        $("#box").toggleClass("bg-change");
+    });
 
-    // var final = valOne + " " + valTwo + " " + valThree;
-    // $("h1").append(final);
-  });
 
-  $("#btn").on("click", function () {
-    $("#box").append(valOne);
-  });
+    // color change by multiple event in single line
+    $("#box").on("mouseenter mouseleave", function(){
+        $(this).toggleClass("bg-change")
+    });
+
+
+
+    // Color change by multiple event 
+    // $("#box").on({
+    //     "click" : function(){
+    //         $(this).css("background", "blue");
+    //     },
+
+    //     "mouseenter" : function(){
+    //         $(this).css("background", "green")
+    //     },
+
+    //     "mouseleave" : function(){
+    //         $(this).css({"background":"White"})
+    //     }
+
+    // });
+
 });

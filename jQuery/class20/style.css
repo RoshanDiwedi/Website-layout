@@ -1,0 +1,44 @@
+body{
+    text-align: center;
+}
+
+.box{
+    background-color: antiquewhite;
+    padding: 30px 25px;
+    border: 15px solid #000;
+    width: 450px;
+    margin: 0 50px;
+    margin-bottom: 20px;
+}
+
+ul li{
+    display: inline-block;
+    margin-left: 15px;
+    cursor: pointer;
+}
+
+.active{
+    color: red;
+}
+
+#col{
+    background-color: antiquewhite;
+    border: 2px solid #000;
+    width: 100px;
+    height: 100px;
+    margin: 0 auto;
+    margin-top: 25px;
+    position: relative;
+}
+
+hr{
+    position: absolute;
+    top: 41%;
+    left: 50%;
+    width: 100%;
+    transform: translate(-50%);
+}
+
+.twitter-bot{
+    padding: 100px 0;
+}
