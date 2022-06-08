@@ -158,12 +158,46 @@ body{
 
 
 /* Banner Section */
-.img-1{
-    background-image: url(".//images/banner.jpg");
+.full-slider{
+    color: #fff;
+    position: relative;
+}
+
+.slide-img{
     background-size: cover;
     width: 100%;
     background-repeat: no-repeat;
     z-index: 0;
     padding: 300px 0 200px 0;
     text-align: center;
+}
+
+.img-1{
+    background-image: url(".//images/banner.jpg");
+}
+
+.img-2{
+    background-image: url(".//images/banner-01.jpg");
+}
+
+
+/* Banner Content Wrapper */
+.full-slider .banner-slider .slider-caption-warpper{
+    width: 8%;
+    position: absolute;
+    left: 30%;
+    background-image: url(".//images/border-curve.png");
+    background-repeat: no-repeat;
+    background-size: contain;
+    padding-left: 30px;
+    padding-top: 80px;
+    padding-bottom: 80px;
+    text-align: left;
+}
+
+/* banner slider top title */
+.slider-top-title{
+    font-size: 24px;
+    font-family: roboto-regular;
+    text-transform: uppercase;
 }
