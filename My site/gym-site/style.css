@@ -1,3 +1,4 @@
+/* font-family: 'Montserrat', sans-serif; */
 /* imported text */
 @font-face {
     font-family: mont-bold;
@@ -57,10 +58,66 @@
 
 body{
     font-family: roboto-regular;
+    font-size: 16px;
+}
+
+h1, h2, h3, h4, h5, h6{
+    font-family: 'Montserrat', sans-serif;
+}
+
+/* button Hover */
+.btn-light-banner{
+    border: 1px solid #fff;
+    color: var(--light);
+    font-family: 'Montserrat', sans-serif;
+    font-weight: 700;
+    font-size: 1rem;
+    padding: 20px 40px;
+    background-color: transparent;
+    text-transform: capitalize;
+    position: relative;
+    margin-top: 30px;
+    transition: all 600ms ease;
+}
+
+
+button.btn-light::before{
+    border-left: 2px solid var(--red);
+    border-bottom: 2px solid var(--red);
+    position: absolute;
+    content: '';
+    width: 44px;
+    height: 87%;
+    left: -10px;
+    transition: all 600ms ease;
+    top: 19px;
+}
+
+button.btn-light::after{
+    border-top: 2px solid var(--red);
+    border-right: 2px solid var(--red);
+    position: absolute;
+    content: '';
+    width: 44px;
+    height: 87%;
+    left: 82%;
+    top: -9px;
+    transition: all 600ms ease;
+}
+
+.btn-light-banner:hover{
+    background-color: #fff;
+    color: var(--dark);
 }
 
 
 /* Other CSS */
+.box-container{
+    max-width: 1200px;
+    width: 100%;
+    margin: 0 auto;
+}
+
 .container{
     display: flex;
     justify-content: space-between;
@@ -70,7 +127,13 @@ body{
     align-items: center;
 }
 
+.col-12{
+    width: 100%;
+}
 
+.col-4{
+    width: 33.33%;
+}
 /* Header Section */
 #header{
     position: absolute;
@@ -158,46 +221,102 @@ body{
 
 
 /* Banner Section */
-.full-slider{
-    color: #fff;
-    position: relative;
+.slide-img{
+    padding: 300px 0 200px 0;
 }
 
-.slide-img{
-    background-size: cover;
-    width: 100%;
-    background-repeat: no-repeat;
-    z-index: 0;
-    padding: 300px 0 200px 0;
-    text-align: center;
+.slide-img h3{
+    color: var(--light);
+    font-size: 5.25rem;
 }
 
 .img-1{
     background-image: url(".//images/banner.jpg");
+    background-size: cover;
+    width: 100%;
+    background-repeat: no-repeat;
+    z-index: 0;
+    text-align: center;
 }
 
 .img-2{
-    background-image: url(".//images/banner-01.jpg");
-}
-
-
-/* Banner Content Wrapper */
-.full-slider .banner-slider .slider-caption-warpper{
-    width: 8%;
-    position: absolute;
-    left: 30%;
-    background-image: url(".//images/border-curve.png");
+    background-image: url(".//images/banner-1.jpg");
+    background-size: cover;
+    width: 100%;
     background-repeat: no-repeat;
-    background-size: contain;
-    padding-left: 30px;
-    padding-top: 80px;
-    padding-bottom: 80px;
-    text-align: left;
+    z-index: 0;
+    text-align: center;
 }
 
-/* banner slider top title */
-.slider-top-title{
-    font-size: 24px;
-    font-family: roboto-regular;
+.slick-prev{
+    position: absolute;
+    top: 50%;
+    z-index: 2;
+    right: 5%;
+}
+
+.slick-next{
+    position: absolute;
+    top: 50%;
+    left: 5%;
+}
+
+.slide-img .text{
+    color: var(--white);
+    font-family: 'Montserrat', sans-serif; 
+    font-size: 1.87rem;
+    font-weight: 400;
+    margin: 20px 0;
+}
+
+.fluid-container .col-4{
+    padding: 80px 0;
+}
+
+.pod-col-1{
+    background-color: #222;
+    color: var(--white);
+    overflow: hidden;
+    text-align: center;
+    position: relative;
+    margin-bottom: 150px;
+}
+
+.pod-col-1 .gym-text{
+    position: absolute;
+    left: -23%;
+    bottom: 0;
+    opacity: 0.20;
+    font-size: 170px;
+    color: transparent;
+    transform: rotate(-90deg);
+    -webkit-text-stroke-width: 1px;
+    -webkit-text-stroke-color: #ffffff;
     text-transform: uppercase;
+}
+
+.pod-col-1 .content-wrapper{
+    width: 80%;
+    display: flex;
+    flex-direction: column;
+    margin: 0 auto;
+    text-align: center;
+    position: relative;
+}
+
+.pod-col-1::before{
+    background-color: #222;
+    position: absolute;
+    content: '';
+}
+
+.pod-col-1 .content-wrapper img{
+    color: var(--white);
+    max-width: 50px;
+    width: 100%;
+}
+
+.pod-col-1 .content-wrapper h4{
+    color: var(--white);
+    width: 100%;
 }

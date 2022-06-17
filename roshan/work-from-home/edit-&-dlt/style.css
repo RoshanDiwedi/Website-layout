@@ -1,0 +1,141 @@
+*{
+    margin: 0;
+    padding: 0;
+    font-family: 'Poppins', sans-serif;
+    font-size: 16px;
+    box-sizing: border-box;
+}
+
+li{
+    list-style-type: none;
+}
+
+body{
+    background-color: #EBCADD;
+}
+
+.col-6{
+    width: 100%;
+}
+
+.main-container{
+    width: 100%;
+    height: 100vh;
+    margin: 0 auto;
+}
+
+.main-container h1{
+    color: #F05CC6;
+    font-size: 5rem;
+    text-align: center;
+}
+
+.content-container-wrapper{
+    background-color: rgba(255, 255, 255, 0.5);
+    border-radius: 20px;
+    margin: 0 auto;
+    padding: 35px 30px;
+    max-width: 980px;
+    width: 100%;
+    margin-top: 30px;
+}
+
+.content-container{
+    display: flex;
+}
+
+.content-container p{
+    color: #666;
+    font-size: 18px;
+    margin-bottom: 5px;
+}
+
+label{
+    display: flex;
+}
+
+.inp-text{
+    background-color: #fff !important;
+    border: none !important;
+    width: 250px;
+    display: flex;
+    align-items: center;
+    padding: 0px 10px;
+}
+
+.list-wrapper{
+    background-color: #fff;
+    border: 1px solid #F05CC6;
+    padding: 5px;
+    width: 64%;
+}
+/* content Section */
+/* .box-shape{
+    position: relative;
+      width: 100px;
+      height: 90px;
+}
+
+.box-shape::after,
+.box-shape::before{
+    position: absolute;
+    content: "";
+    left: 50px;
+    top: 0;
+    width: 50px;
+    height: 80px;
+    background: red;
+    border-radius: 50px 50px 0 0;
+    transform: rotate(-45deg);
+    transform-origin: 0 100%;
+}
+
+.box-shape::after{
+    left: 0;
+    transform: rotate(45deg);
+    transform-origin: 100% 100%;
+} */
+
+.content-container input[type="text"]{
+    background-color: #EBCADD;
+    text-align: left;
+    max-width: 350px;
+    width: 100%;
+    border: 1px solid #F05CC6;
+    padding: 10px 20px;
+    outline: none;
+}
+
+.btn{
+    background-color: #F05CC6;
+    border-radius: 5px;
+    color: #fff;
+    display: inline-block;
+    font-size: 18px;
+    font-weight: 600;
+    letter-spacing: 3px;
+    text-decoration: none;
+    text-transform: uppercase;
+    padding: 10px 40px;
+    cursor: pointer;
+    margin-left: 15px;
+}
+
+.col-2 h2{
+    color: #666;
+    font-size: 2rem;
+    text-transform: uppercase;
+    margin-top: 25px;
+}
+
+.output{
+    text-align: center;
+    color: #F05CC6;
+    font-size: 20px;
+    height: 200px;
+    letter-spacing: 2px;
+    text-transform: capitalize;
+    font-weight: 600;
+    margin: auto;
+    width: 100%;
+}
