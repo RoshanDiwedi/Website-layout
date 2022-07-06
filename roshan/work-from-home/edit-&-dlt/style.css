@@ -55,7 +55,6 @@ label{
 }
 
 .inp-text{
-    background-color: #fff !important;
     border: none !important;
     width: 250px;
     display: flex;
@@ -96,7 +95,7 @@ label{
     transform-origin: 100% 100%;
 } */
 
-.content-container input[type="text"]{
+.content-container .input{
     background-color: #EBCADD;
     text-align: left;
     max-width: 350px;
@@ -104,6 +103,10 @@ label{
     border: 1px solid #F05CC6;
     padding: 10px 20px;
     outline: none;
+}
+
+.inp-text-wrapper{
+    width: 350px;
 }
 
 .btn{

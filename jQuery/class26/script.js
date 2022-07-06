@@ -17,7 +17,7 @@ $(document).ready(function () {
 
   // slideToggle method
   $("#btn-3").on("click", function(){
-    $(".box").slideToggle(fast);
+    $(".box").slideToggle(1000);
     console.log("Box is Toggle");
   });
 
