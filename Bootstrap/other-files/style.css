@@ -1,0 +1,13 @@
+body::before{
+    background-color: red !;
+}
+
+.mybox{
+    background-color: aqua;
+}
+
+@media (min-width:768px){
+    .news-input{
+        width: 50% !important;
+    }
+}
